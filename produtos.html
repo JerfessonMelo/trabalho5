@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Brinquedos - Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Loja de Brinquedos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product">
+        <div class="product-list">
+            <div class="product" data-id="1">
+                <img src="imagens/BicicletaInfantil.png" alt="BicicletaInfantil">
+                <p>Bicicleta Infantil</p>
+                <span>R$ 249.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('1')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="2">
+                <img src="imagens/CarrinhoParaBonecas.png" alt="CarrinhoParaBonecas">
+                <p>Carrinho de Boneca</p>
+                <span>R$ 24.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('2')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="3">
+                <img src="imagens/CarrinhoPoscherVermelha.png" alt="CarrinhoPoscherVermelha">
+                <p>Poscher Vermelha</p>
+                <span>R$ 99.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('3')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="4">
+                <img src="imagens/ElevadoBrinquedosGirafa.png" alt="ElevadoBrinquedosGirafa">
+                <p>Elevado de Brinquedos Girafa</p>
+                <span>R$ 49.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('4')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="5">
+                <img src="imagens/EscavadeiraMaxx.png" alt="EscavadeiraMaxx">
+                <p>Escavadeira Maxx</p>
+                <span>R$ 19.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('5')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="6">
+                <img src="imagens/EspoletaArminhaBrinquedo.png" alt="EspoletaArminhaBrinquedo">
+                <p>Espoleta Arminha Brinquedo</p>
+                <span>R$ 11,98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('6')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="7">
+                <img src="imagens/FuscaCorridaN58.png" alt="FuscaCorridaN58">
+                <p>Fusca Corrida N58</p>
+                <span>R$ 34.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('7')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="8">
+                <img src="imagens/GeleleSlimeUniconio.png" alt="GeleleSlimeUniconio">
+                <p>Gelelé Slime</p>
+                <span>R$ 9.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('8')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="9">
+                <img src="imagens/KitFerramentasInfantio.png" alt="KitFerramentasInfantio">
+                <p>Kit Ferramentas Educativas</p>
+                <span>R$ 74.99</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('9')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="10">
+                <img src="imagens/KitUtensiliosCozinhaBarbie.png" alt="KitUtensiliosCozinhaBarbie">
+                <p>Kit Utensílios Cozinha Barbie</p>
+                <span>R$ 499.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('10')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="11">
+                <img src="imagens/PopEletronicAntiStressInfantil.png" alt="PopEletronicAntiStressInfantil">
+                <p>Pop Anti-Stress Infantil</p>
+                <span>R$ 9,98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('11')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="product" data-id="12">
+                <img src="imagens/TratoNewHolland.png" alt="TratoNewHolland">
+                <p>Trato New Holland</p>
+                <span>R$ 36.98</span>
+                <div class="product-buttons">
+                    <button onclick="storeProductDetails('12')">Ver Detalhes</button>
+                    <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Loja de Brinquedos. Todos os direitos reservados. JerfessonMelo</p>
+    </footer>
+</body>
+
+</html>
