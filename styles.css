@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+#sobre {
+    max-width: 50%;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 :root {
-    --primary-color: #4CAF50;
-    --primary-hover: #45a049;
-    --background-color: #f4f4f4;
-    --text-color: #333;
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    --background-color: #ecf7ff;
+    --text-color: #2c3e50;
     --white: #fff;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --shadow-hover: rgba(0, 0, 0, 0.2);
@@ -158,6 +167,14 @@ button:hover {
     margin-bottom: 15px;
 }
 
+#detalhes .price {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
 #checkout {
     max-width: 600px;
     margin: 20px auto;
@@ -165,6 +182,7 @@ button:hover {
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 4px 10px var(--shadow-color);
+    text-align: center;
 }
 
 #checkout h2 {
