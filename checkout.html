@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Brinquedos - Checkout</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="pagina-checkout">
     <header>
         <h1>Loja de Brinquedos</h1>
         <nav>
@@ -22,10 +22,13 @@
         </nav>
     </header>
 
-    <section id="checkout">
+    <section id="checkout.carrinho">
         <h2>Seu Carrinho</h2>
         <div id="carrinhoLista"></div>
-        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <div id="carrinhoTotal">
+            <p>Total: R$ <span id="totalValor">0.00</span></p>
+        </div>
+        <button>Finalizar Compra</button>
     </section>
 
     <footer>

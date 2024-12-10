@@ -175,52 +175,6 @@ button:hover {
     margin-top: 20px;
 }
 
-#checkout {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    text-align: center;
-}
-
-#checkout h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--primary-color);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-    border-color: var(--primary-color);
-    outline: none;
-}
-
-#checkout button {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
 footer {
     text-align: center;
     padding: 20px;
@@ -229,6 +183,66 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.pagina-checkout {
+    text-align: center;
+    align-items: center;
+}
+
+.pagina-checkout #carrinhoLista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagina-checkout .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px;
+}
+
+.pagina-checkout .product img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.pagina-checkout .product p {
+    margin: 0;
+    flex: 1;
+}
+
+.pagina-checkout .product span {
+    margin-right: 10px;
+}
+
+.pagina-checkout .product button {
+    padding: 5px 10px;
+    background-color: var(--primary-hover);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagina-checkout .product button:hover {
+    background-color: var(--primary-hover);
+}
+
+.pagina-checkout #carrinhoTotal {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
