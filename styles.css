@@ -245,6 +245,10 @@ footer {
     text-align: center;
 }
 
+#checkout.carrinho {
+    max-width: 60%;
+}
+
 @media (max-width: 768px) {
     .product {
         width: 90%;
