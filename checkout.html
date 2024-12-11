@@ -16,7 +16,6 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="detalhes.html">Detalhes</a></li>
                 <li><a href="checkout.html">Checkout</a></li>
             </ul>
         </nav>
@@ -43,11 +42,33 @@
         <div id="carrinhoTotal">
             <p>Total: R$ <span id="totalValor">31,96</span></p>
         </div>
-        <button>Finalizar Compra</button>
+
+        <h2>Formulário de Entrega</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+
+            <button class="btn" type="submit">Finalizar Compra</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Loja de Brinquedos. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Loja de Brinquedos<br>
+            E-mail: LojaBrinquedos@hotmail.com<br>
+            Telefone 1 (87) 9.9988-7766 Telefone 2 (87) 9.9655-4401<br>
+            Endereço: Rua Santos Dumont, 15, Centro, Fortaleza - CE</p>
     </footer>
 
 </body>

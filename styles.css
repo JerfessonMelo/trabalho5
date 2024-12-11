@@ -4,19 +4,10 @@
     box-sizing: border-box;
 }
 
-#sobre {
-    max-width: 50%;
-    text-align: center;
-    padding: 5px;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
 :root {
     --primary-color: #3498db;
     --primary-hover: #2980b9;
-    --background-color: #ecf7ff;
+    --background-color: #ecf7ff; 
     --text-color: #2c3e50;
     --white: #fff;
     --shadow-color: rgba(0, 0, 0, 0.1);
@@ -54,7 +45,23 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
+}
+
+#sobre {
+    max-width: 50%;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #product {
@@ -90,6 +97,12 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
+.product h2 {
+    font-size: 1em;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
 .product p {
     font-weight: 700;
     margin: 10px 0;
@@ -116,38 +129,7 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.product-buttons button {
-    flex: 1;
-    padding: 10px 0;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.product-buttons button:hover {
-    background-color: var(--primary-hover);
-}
-
-button {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: var(--primary-hover);
-}
-
+.product-buttons button,
 .btn {
     flex: 1;
     padding: 10px 0;
@@ -159,10 +141,10 @@ button:hover {
     color: var(--white);
     cursor: pointer;
     transition: background-color 0.3s;
-    text-decoration: none;
-
+    text-decoration: none; 
 }
 
+.product-buttons button:hover,
 .btn:hover {
     background-color: var(--primary-hover);
 }
@@ -174,8 +156,6 @@ button:hover {
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 4px 10px var(--shadow-color);
-    text-decoration: underline;
-
 }
 
 #detalhes h2 {
@@ -188,7 +168,8 @@ button:hover {
     margin-bottom: 15px;
 }
 
-#detalhes .price {
+#detalhes .price
+{
     font-size: 16px;
     color: var(--primary-color);
     font-weight: bold;
@@ -268,18 +249,4 @@ footer {
 
 #checkout.carrinho {
     max-width: 60%;
-}
-
-@media (max-width: 768px) {
-    .product {
-        width: 90%;
-    }
-
-    .product-buttons {
-        flex-direction: column;
-    }
-
-    .product-buttons button {
-        width: 100%;
-    }
 }
